@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>String Flow Live Wallpaper - Privacy Policy & App Description</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6B6B;
+            --dark: #2C3E50;
+            --light: #F8F9FA;
+            --accent: #4ECDC4;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+
+        .navbar {
+            background: rgba(44, 62, 80, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .privacy-badge {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ECDC4;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px 0;
+            margin-top: 100px;
+        }
+
+        .floating-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+            100% { transform: translateY(-1000px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Particles Background -->
+    <div class="floating-particles" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">
+                <span class="text-primary">String</span>Flow
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#description">Description</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#privacy">Privacy Policy</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">String Flow Live Wallpaper</h1>
+            <p class="lead mb-4" style="font-size: 1.3rem; max-width: 700px; margin: 0 auto;">
+                Mesmerizing animated strings that dance across your screen in fluid, elegant motion.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <i class="bi bi-download"></i> Download on Google Play
+                </a>
+                <a href="#privacy" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-shield-check"></i> Privacy First
+                </a>
+            </div>
+            <div class="privacy-badge mx-auto mt-4">
+                <i class="bi bi-lock-fill"></i> No Personal Data Collected
+            </div>
+        </div>
+    </section>
+
+    <!-- App Description -->
+    <section id="description" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">App Description</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card p-5 text-white">
+                        <div class="icon-box">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3 text-center">Experience Fluid Art in Motion</h3>
+                        <p class="lead text-center mb-4">
+                            <strong>String Flow Live Wallpaper</strong> transforms your device with smooth, flowing string animations that react to your touch and movement.
+                        </p>
+                        <hr class="border-light opacity-25">
+                        <div class="row text-center mt-4">
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-droplet-fill text-primary" style="font-size: 2rem;"></i>
+                                <h5 class="mt-2">Smooth Animations</h5>
+                                <p class="small opacity-75">60 FPS fluid physics</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-palette2 text-secondary" style="font-size: 2rem;"></i>
+                                <h5 class="mt-2">Custom Colors</h5>
+                                <p class="small opacity-75">Choose your palette</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-battery-half text-accent" style="font-size: 2rem;"></i>
+                                <h5 class="mt-2">Battery Friendly</h5>
+                                <p class="small opacity-75">Optimized performance</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-white bg-opacity-10 rounded">
+                            <p class="mb-0 small">
+                                <strong>Powered by:</strong> Google AdMob (non-personalized ads) • Hosted on GitHub Pages • Published via Google Play Console
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Privacy Policy</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card p-5 text-white">
+                        <div class="icon-box">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-4 text-center">Your Privacy is Our Priority</h3>
+
+                        <div class="accordion" id="privacyAccordion">
+                            <div class="accordion-item bg-transparent border-light border">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#dataCollection">
+                                        <i class="bi bi-database-fill me-2"></i> Data Collection
+                                    </button>
+                                </h2>
+                                <div id="dataCollection" class="accordion-collapse collapse show" data-bs-parent="#privacyAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">
+                                            <strong>We do NOT collect any personal data.</strong> String Flow Live Wallpaper does not require any permissions to access your photos, contacts, location, or any personal information.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent border-light border">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#thirdParty">
+                                        <i class="bi bi-diagram-3-fill me-2"></i> Third-Party Services
+                                    </button>
+                                </h2>
+                                <div id="thirdParty" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="mb-0">
+                                            <li><strong>Google AdMob:</strong> Displays non-personalized ads. No user profiling or tracking.</li>
+                                            <li><strong>Google Play Console:</strong> Used for app distribution and analytics (crash reports, install sources).</li>
+                                            <li><strong>GitHub Pages:</strong> Free static hosting for this privacy page.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent border-light border">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#permissions">
+                                        <i class="bi bi-check-circle-fill me-2"></i> Permissions Explained
+                                    </button>
+                                </h2>
+                                <div id="permissions" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">
+                                            The only permission requested is <code>SET_WALLPAPER</code> — required to apply the live wallpaper. No internet, storage, or location access is needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent border-light border">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-transparent text-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#updates">
+                                        <i class="bi bi-arrow-repeat me-2"></i> Policy Updates
+                                    </button>
+                                </h2>
+                                <div id="updates" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">
+                                            Last updated: <strong>November 13, 2025</strong><br>
+                                            We will notify users via the Play Store if this policy changes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <div class="privacy-badge">
+                                <i class="bi bi-shield-check"></i> 100% Privacy-Focused • No Tracking • No Data Collection
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title text-white">Get in Touch</h2>
+                <p class="lead mb-4">Have questions? We're here to help.</p>
+                <a href="mailto:support@stringflow.app" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-envelope-fill"></i> support@stringflow.app
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0 text-white opacity-75">
+                &copy; 2025 String Flow Live Wallpaper. Hosted on <a href="https://pages.github.com" class="text-accent text-decoration-none">GitHub Pages</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Floating Particles Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = Math.random() * 6 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>
